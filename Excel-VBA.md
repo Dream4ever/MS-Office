@@ -14,3 +14,23 @@ Sub RenameCells()
 End Sub
 ```
 
+# 修改带链接单元格的链接地址
+
+```
+Sub ModifyAdd()
+
+    Dim records As Integer
+    
+    ThisWorkbook.Sheets(1).Activate
+    
+    records = Cells(Rows.Count, "A").End(xlUp).Row
+    
+    For i = 2 To records
+        OriCellPos = "A" + CStr(i)
+        OldAdd = Range(OriCellPos).Hyperlinks(1).Address
+        NewAdd = Left(OldAdd, 7) + "\" + Mid(OldAdd, 12, 14)
+        Range(OriCellPos).Hyperlinks(1).Address = NewAdd
+    Next
+    
+End Sub
+```
