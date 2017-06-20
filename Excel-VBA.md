@@ -1,3 +1,6 @@
+# 重命名带链接的单元格的文字
+
+```
 Sub RenameCells()
 
     Dim hl As Hyperlink
@@ -9,3 +12,5 @@ Sub RenameCells()
     Next
     
 End Sub
+```
+
