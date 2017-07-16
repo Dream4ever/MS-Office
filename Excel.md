@@ -36,7 +36,7 @@
 =NORMINV(RAND(),MEAN,standard_dev)
 ```
 
-参考链接：[](https://www.extendoffice.com/documents/excel/2472-excel-random-number-mean-standard-deviation.html)
+参考链接：[Generate Random Number By Given Certain Mean And Standard Deviation In Excel](https://www.extendoffice.com/documents/excel/2472-excel-random-number-mean-standard-deviation.html)
 
 # 转换
 
