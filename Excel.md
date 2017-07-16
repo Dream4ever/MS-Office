@@ -28,6 +28,16 @@
 - 返回最后一个文本单元格的位置：=LOOKUP(REPT("座",255),B:B,ROW(B:B))
 - 返回最后一个文本单元格的数值：=LOOKUP(REPT("座",255),B:B)
 
+# 生成
+
+- 生成一组分布在指定区间，并且有指定均值的随机数：
+
+```
+=NORMINV(RAND(),MEAN,standard_dev)
+```
+
+参考链接：[](https://www.extendoffice.com/documents/excel/2472-excel-random-number-mean-standard-deviation.html)
+
 # 转换
 
 - 将2010.08.03格式的数据转换为日期格式，由于Excel将2010-08-03格式的数据识别为日期格式，所以将 . 替换成 - 即可。
