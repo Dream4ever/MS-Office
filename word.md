@@ -88,6 +88,8 @@
 
 然后定位到文档中最后一个批注那里，看批注的编号即可。
 
+![](https://raw.githubusercontent.com/Dream4ever/Pics/master/word-add-print-review-edit-mode.png)
+
 参考资料
 
 - [Numbers for Referencing Review Comments in Word](https://superuser.com/a/720801/432588)
