@@ -80,6 +80,18 @@
 \[([0-9]{1,3})\]
 ```
 
+# 特殊内容查找
+
+## 计算文档中批注数量
+
+点击左上角“快速访问工具栏”右侧的下拉三角箭头，再点击“其他命令”，在弹出的对话框中，按照下图的方法将指定的命令添加到“快速访问工具栏”中。
+
+然后定位到文档中最后一个批注那里，看批注的编号即可。
+
+参考资料
+
+- [Numbers for Referencing Review Comments in Word](https://superuser.com/a/720801/432588)
+
 # MathType
 
 编辑论文公式的时候发现自动编号出故障了，用`Modify Break`把第一章的MathType分隔符由`Next Chapter`改为了`Chapter Number`，这样指定了第一章之后，后面的各章编号就正常了。
