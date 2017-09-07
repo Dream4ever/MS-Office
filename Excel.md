@@ -4,6 +4,12 @@
 
 # 查找
 
+- 想知道某个单元格的内容，是公式计算后得到的值，还是直接输入的值？用 `ISFORMULA()` 函数来检查就行了。
+
+```
+=ISFORMULA(A2)
+```
+
 - 在A列中查找包含B列各单元格中的字符串的单元格，如存在则返回A列对应单元格所在行的C列单元格的值。
   - `MATCH("*"&B2&"*",A:A,0)`是在A列中，查找包含B2单元格字符串的单元格。
   - `INDEX(C:C,MATCH("*"&B2&"*",A:A,0))`，则根据之前的查找结果，获取对应行在C列单元格中的值。
@@ -11,9 +17,11 @@
 - 要获取字符串在单元格中首次出现的位置，用`FIND`函数即可：`FIND("John", A2)`。
 
 - 要判断是否有重复的行，用下面的公式即可。该公式判断第2行至第10行，是否有A、B、C列的值均相同的行。
+
 ```
  =IF(SUMPRODUCT(($A$2:$A$10=A2)*1,($B$2:$B$10=B2)*1,($C$2:$C$10=C2)*1)>1,"Duplicates","No duplicates")
  ```
+ 
  参考链接：[How To Find And Select Duplicate Rows In A Range In Excel?](https://www.extendoffice.com/documents/excel/1352-excel-find-duplicate-rows.html)
 
 - 返回最后一个日期单元格其右侧单元格的数值：=VLOOKUP(I3, A2:B520, 2, TRUE)。I3为目标日期单元格日期对应的数值，A列为日期，B列为其它数据，TRUE表示如果能找到目标日期单元格，则返回该行某一列，否则返回上一行某一列。
