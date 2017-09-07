@@ -10,6 +10,8 @@
 =ISFORMULA(A2)
 ```
 
+参考链接：[How to tell if an Excel cell has a formula or is hardcoded?](https://superuser.com/a/1037251/432588)
+
 - 在A列中查找包含B列各单元格中的字符串的单元格，如存在则返回A列对应单元格所在行的C列单元格的值。
   - `MATCH("*"&B2&"*",A:A,0)`是在A列中，查找包含B2单元格字符串的单元格。
   - `INDEX(C:C,MATCH("*"&B2&"*",A:A,0))`，则根据之前的查找结果，获取对应行在C列单元格中的值。
