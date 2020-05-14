@@ -99,3 +99,7 @@
 编辑论文公式的时候发现自动编号出故障了，用`Modify Break`把第一章的MathType分隔符由`Next Chapter`改为了`Chapter Number`，这样指定了第一章之后，后面的各章编号就正常了。
 用MathType的`Right-numbered Equation`功能来插入带编号的公式时，分割形式为`(1.1)`，需要将其改成`(1-1)`这样的编号，在MathType选项卡的`Equation Numbers`选项下，点击`(1) Insert Number`选项右边的倒三角，选择`Format`选项，将`Seperator`这一项右边的内容从点号`.`改成短横线`-`即可。
 MathType插入的用大括号括起来的两个公式，下面的公式太长，为了美观通过手动输入回车换行，但是上面的公式和括号的上端之间有一段距离，在MathType中选中公式（不要选中左边的大括号），在格式中设置为`对齐到顶端`或`对齐到底端`即可。
+
+# 疑难杂症
+
+有同事的部分 Word 文档在打开时报错，经研究，发现是 Word 文件被锁定了，按照 [How to resolve the problem "Word experienced an error trying to open the file" when opening a Word 2007/2010 file (Easy Fix Article)](https://support.microsoft.com/en-us/help/2749199/how-to-resolve-the-problem-word-experienced-an-error-trying-to-open-th) 这篇文章中所说的方法，将文档解锁，就可以正常打开了。
